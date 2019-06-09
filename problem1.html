@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>
+        This is practice file
+    </h1>
+</body>
+
+<script>
+    var students = [20, 45, 78, 10, 56, 89, 13, 34, 36, 86, 89, 10, 14, 18, 89, 98, 16, 34, 23, 67, 10, 78, 36, 37];
+    //Every student who gets more than or equal to 36 marks is passed, tell me how many student 
+    //passed the exams, write a program.
+    
+    var counter = 0;
+    // var failedStudents = 0;
+    
+    for (var i=0; i<students.length; i++) {
+        
+        if(students[i] >= 36) {
+            counter = counter + 1;
+            // counter++;
+        }
+        // if (students[i]>=36) {
+        //     passedStudent++;
+        //     // console.log("student is passed");
+        // }
+        // else {
+        //     // failedStudents++;
+        //     // console.log("student is failed");
+        // }
+    }
+
+    console.log(counter);
+    // console.log(failedStudents);
+</script>
+
+</html>
+

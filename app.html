@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>
+        This is practice file
+    </h1>
+</body>
+
+<script>
+    var firstNum = 180;
+    var secondNum = 10;
+    var thirdNum = 180;
+    var fourthNum = "180";
+
+    console.log(firstNum > secondNum)
+
+    console.log(firstNum > thirdNum)
+    console.log(firstNum >= thirdNum)
+    console.log(firstNum <= thirdNum)
+    console.log(firstNum <= fourthNum)
+    
+    var isStudent = true;
+    var isTeacher = false;
+    var isMaster = "true";
+     
+    console.log(!isStudent);
+
+    console.log("isStudent == isTeacher => " + (isStudent == isTeacher));
+    console.log("isStudent != isTeacher => " + (isStudent != isTeacher));
+
+    console.log("isStudent === isMaster => " + (isStudent === isMaster));
+    console.log("isStudent !== isMaster => " + (isStudent !== isMaster));
+
+    isStudent ? console.log("i am student") : console.log("i am not a student");
+   
+    if(isStudent && isTeacher) {
+        console.log("i am student");
+    }
+    else {
+        console.log("i am not a student");
+    }
+
+    console.log("11%2 => " + (11%2))
+    console.log("201%2 => " + (201%2))
+
+    console.log("201/2 => " + (201/2))
+    console.log("201 * 2 => " + (201*2))
+
+    var numbers = [10, 20, 30, 40, 50, 70];
+
+    for (var i=0; i < numbers.length; i++) {
+        console.log(numbers[i]);
+        if(numbers[i] % 2 == 0) {
+            console.log("value is even")
+        } else {
+            console.log("value is odd")
+        }
+    }
+    
+</script>
+
+</html>
