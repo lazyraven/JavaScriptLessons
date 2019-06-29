@@ -1,0 +1,39 @@
+<html>
+
+
+<script>
+
+    //Tell me who has scored more than equal to 7000 runs
+    //Tell me who has scored more than equal to 25 hundreds 
+    var players = [
+        { name: "Virat Kohli", totalHundereds: 35, totalFifties: 50 },
+        { name: "Mahendra Dhoni", totalHundereds: 15, totalFifties: 98 },
+        { name: "Sachin Tendulkar", totalHundereds: 49, totalFifties: 95 },
+        { name: "Virendra Sehwag", totalHundereds: 25, totalFifties: 75 },
+        { name: "Rohit Sharma", totalHundereds: 31, totalFifties: 62 }
+    ]
+    // var playersArray = [];
+    // players.forEach(function (item) {
+    //     totalSum = (100 * item.totalHundereds) + (50 * item.totalFifties)
+    //     console.log(totalSum)
+    //     if (totalSum >= 7000) {
+
+    //         playersArray.push(item)
+
+    //     }
+    // })
+    // console.log(playersArray)
+
+
+
+    var playerArray = [];
+    players.forEach(function (item) {
+        if (item.totalHundereds >= 25) {
+            playerArray.push(item.name)
+        }
+    })
+    console.log(playerArray)
+
+</script>
+
+</html>
