@@ -1,0 +1,88 @@
+/* @font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Regular-webfont.eot");
+  src: url("Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("Roboto-Regular-webfont.woff") format("woff"),
+    url("Roboto-Regular.ttf") format("truetype"),
+    url("Roboto-Regular-webfont.svg#RobotoRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/montserrat-v14-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("./fonts/montserrat-v14-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    url("./fonts/montserrat-v14-latin-regular.woff") format("woff"),
+    url("./fonts/montserrat-v14-latin-regular.ttf") format("truetype"),
+    url("./fonts/montserrat-v14-latin-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/open-sans/open-sans-v17-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+    url("./fonts/open-sans/open-sans-v17-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/open-sans/open-sans-v17-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./fonts/open-sans/open-sans-v17-latin-regular.woff") format("woff"),
+    /* Modern Browsers */
+      url("./fonts/open-sans/open-sans-v17-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/open-sans/open-sans-v17-latin-regular.svg#OpenSans")
+      format("svg"); /* Legacy iOS */
+}
+
+/* use the font */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal !important;
+}
+
+h3 {
+  font-weight: normal !important;
+}
+
+.font-family-osans {
+  font-family: "Open Sans";
+}
+
+.my-btn {
+  background-color: coral;
+  padding: 8px 30px;
+  border: none;
+}
+
+.blue-box {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+}
+
+.big-lime-box {
+  background-color: lime;
+  height: 600px;
+  width: 100%;
+}
+
+.margin-top-3x {
+  margin-top: 30px;
+}
+
+.lime-box {
+  background-color: lime;
+  height: 200px;
+  width: 200px;
+}

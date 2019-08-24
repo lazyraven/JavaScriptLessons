@@ -1,0 +1,73 @@
+<html>
+
+<link rel="stylesheet" href="../stylo.css">
+</link>
+
+<script>
+    // "use strict";
+    this.myNumber = 10;
+
+    var getNumber = () => {
+        console.log("getNumber this called");
+        console.log(this);
+
+        // setTimeout(function () {
+        //     console.log("i was called after 5 sec")
+        //     console.log(this.myNumber)
+        // }, 2000)
+
+        // setInterval(function () {
+        //     console.log("i was called after 5 sec")
+        //     console.log(new Date());
+        // }, 1000)
+
+        // console.log(this);
+        // var getName = function () {
+        //     console.log("getName this called")
+        //     console.log(this.myNumber)
+        // }
+        // getName()
+    };
+
+    // getNumber()
+
+    function hideBlue() {
+        console.log("hide blue called");
+    };
+
+
+
+</script>
+
+<body>
+    <h1>Problem 15</h1>
+
+    <div>
+
+
+        <div class="big-lime-box">
+            <div class="blue-box">
+                <button type="button" class="my-btn"> BLue Button</button>
+
+            </div>
+            <button type="button" class="my-btn"> Lime Button</button>
+
+        </div>
+
+        <p>this is p element 1</p>
+        <p>this is p element 2</p>
+        <h1>this is p element 2</h1>
+        <h1>this is p element 2</h1>
+        <h1>this is p element 2</h1>
+        <h1>this is p element 2</h1>
+        <h1>this is p element 2</h1>
+
+
+
+
+        <button type="button" class="my-btn margin-top-3x" onclick="hideBlue()">Hide Blue</button>
+    </div>
+
+</body>
+
+</html>
