@@ -1,0 +1,35 @@
+<html>
+
+<link rel="stylesheet" href="../styles/stylo.css">
+<!-- <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> -->
+</link>
+
+<body>
+    <h1>Forms Example</h1>
+
+    <form onsubmit="event.preventDefault(); handleSubmit();">
+        <input id="fullName" name="fullName" type="text" placeholder="Enter a full name"
+            onchange="onFormFieldChange(event)">
+        <input id="email" name="email" type="email" placeholder="Enter an email" onchange="onFormFieldChange(event)">
+        <input id="phone" name="phone" type="text" placeholder="Enter a phone" onchange="onFormFieldChange(event)">
+
+        <p>
+            <input type="radio" class="male" name="genderRadio" value="male">Male</input>
+            <input type="radio" class="female" name="genderRadio" value="female">Female</input>
+            <input type="radio" class="other" name="genderRadio" value="other">Other</input>
+        </p>
+
+        <p>
+            <input id="verifiedCheck" name="verifiedCheck" type="checkbox" value="verified">Verified</input>
+            <input id="trainingCheck" name="trainingCheck" type="checkbox" value="verified">Trained</input>
+            <input id="workCheck" name="workCheck" type="checkbox" value="verified">Work Epxerience</input>
+        </p>
+
+        <button id="handleSubmitBtn" type="submit">Submit</button>
+
+    </form>
+
+</body>
+<script src="../scripts/forms.js"></script>
+
+</html>
