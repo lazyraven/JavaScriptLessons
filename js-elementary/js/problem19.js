@@ -13,7 +13,7 @@ var dailyMilkSold = [
 ];
 
 function getMilkEarning() {
-  dailyMilkSold.forEach(function(items) {
+  dailyMilkSold.forEach(function (items) {
     var milkDay = document.getElementById("dayNumber").value;
     if (items.day === milkDay) {
       document.getElementById("milkQuantity").innerHTML = items.milkQuantity;

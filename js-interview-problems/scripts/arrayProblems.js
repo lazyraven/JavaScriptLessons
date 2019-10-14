@@ -197,7 +197,7 @@ let cakeTotalPrice = function (arr) {
         }
     })
     console.log(cakePrice)
-
+    console.log(cakePrice.reduce((a, b) => a + b, 0))
     let total = 0
     cakePrice.forEach((price) => {
         total = total + price

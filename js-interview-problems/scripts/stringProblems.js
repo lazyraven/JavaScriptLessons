@@ -79,12 +79,12 @@ console.log(studentNameTotalM)
 // totalMarks.reduce((a, b) => a + b, 0)
 
 function printStudentMarks(studentArray) {
+    console.log("total foreach called")
     studentArray.forEach((std) => {
         let total = 0;
         Object.values(std.marks).forEach((item) => {
             total = total + item;
         });
-        console.log("total foreach called")
         console.log(total)
     })
 };
