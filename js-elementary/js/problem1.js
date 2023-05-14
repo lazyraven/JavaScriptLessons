@@ -8,7 +8,7 @@ var classBStudents = [10, 14, 18, 89, 98, 16, 34, 23, 67, 10, 78, 36];
 //Q2. How many students from class B passed ?
 function getPassedStudents(students) {
   var sum = 0;
-  students.forEach(function(item) {
+  students.forEach(function (item) {
     if (item >= 36) {
       sum = sum + 1;
     }
@@ -17,6 +17,7 @@ function getPassedStudents(students) {
 }
 
 function classAStudentsPassed() {
+  console.log("classAStudentsPassed called");
   getPassedStudents(classAStudents);
 }
 
