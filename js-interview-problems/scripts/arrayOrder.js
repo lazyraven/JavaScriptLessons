@@ -8,6 +8,7 @@ function findMinimum(dataItems) {
     let minVal = dataItems[0];
     for (let i = 0; i < dataItems.length; i++) {
         if (minVal > dataItems[i]) {
+            console.log("dataItems[i]", minVal, dataItems[i])
             minVal = dataItems[i]
         }
     }
@@ -21,6 +22,8 @@ function findMaxmum(dataItems) {
     console.log("findMaximum fucntion called")
     let maxVal = dataItems[0];
     for (let i = 0; i < dataItems.length; i++) {
+        console.log("dataItems[i]", maxVal, dataItems[i])
+
         if (maxVal < dataItems[i]) {
             maxVal = dataItems[i]
         }
@@ -54,7 +57,7 @@ function minmumMarksSub(studentObject) {
 };
 minmumMarksSub(student);
 
-console.log(Object.values(student))
+console.log(Object.values(student), Object.keys(student))
 let obj = Object.values(student)
 
 function findMinMarks(dataItems) {
@@ -72,15 +75,15 @@ findMinMarks(obj)
 // console the minimum marks subject name, 
 
 
-const name = "Nisha Yadav";
+const userName = "Nisha Yadav";
 
-for (let i = 0; i < name.length; i++) {
-    // console.log(name[i])
-    let str = name[name.length - (i + 1)]
-    str = str + name[name.length - (i + 1)]
+for (let i = (userName.length - 1); i >= 0; i++) {
+    console.log(userName[i])
+    let str = userName[userName.length - (i + 1)]
+    str = str + userName[userName.length - (i + 1)]
     console.log(str)
 }
-console.log(name)
+console.log(userName)
 
 // //"vadaY ahsiN";
 
