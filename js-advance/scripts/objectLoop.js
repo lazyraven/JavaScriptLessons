@@ -1,3 +1,26 @@
+
+// Give heighest value key
+let objValue1 = { a: 1, b: 7, c: 5 }
+function heighestValueKey(objVal) {
+  Object.keys(objVal);
+  let objArr = Object.values(objVal);
+  console.log("heighestValueKey called", objVal, Object.keys(objVal), objArr)
+
+  let arrVal1 = objArr[0];
+  // let heighestVal = ""
+  for (let i = 1; i < objArr.length; i++) {
+    console.log("objArr", objArr[i]);
+
+    if (arrVal1 < objArr[i]) {
+      arrVal1 = objArr[i]
+      console.log("inn", arrVal1);
+
+    }
+  }
+  console.log("outside", arrVal1);
+
+}
+heighestValueKey(objValue1);
 // let dish = { id: 1, dishName: "Dal makhani", price: 500, dishType: "lunch" };
 
 var student1 = { eng: 70, maths: 90, hindi: 67, science: 89 };
